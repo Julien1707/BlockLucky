@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loterie BlockLucky</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Loterie BlockLucky</h1>
+    <p>Participez à la loterie en achetant un ticket pour <span id="ticketPrice">...</span> ETH</p>
+
+    <!-- Section Image -->
+    <div class="image-container">
+      <img src="./src/lotterie.jpg" alt="Image Blockchain Loterie" id="lotteryImage">
+    </div>
+
+    <!-- Temps Restant -->
+    <p>Temps restant avant le tirage : <span id="deadline">...</span></p>
+
+    <!-- Bouton pour acheter un ticket -->
+    <button class="btn" onclick="acheterTicket()">Acheter un Ticket</button>
+
+    <!-- Section des participants -->
+    <div class="output">
+      <h3>Participants</h3>
+      <p id="participants">Nombre total de participants : 0</p>
+    </div>
+
+    <!-- Affichage de la Cagnotte -->
+    <p>Cagnotte actuelle : <span id="cagnotte">...</span> ETH</p>
+  
+    <!-- Section des gagnants -->
+    <h3>Voir les Gagnants</h3>
+    <select id="gagnants" class="dropdown">
+      <option value="">liste des gagnants</option>
+    </select>
+  </div>
+    
+  <script src="./src/app.js"></script>
+</body>
+</html>
